@@ -44,32 +44,10 @@ def perceptron_model(x_, y_):
     return model_
 
 
-def perceptron_predict(model_, x_):
-    d = 0
-    if len(x_.shape) == 1:
-        d = len(x_)
-    else:
-        _, d = x_.shape
-    x_ = x_.reshape(-1, d)
-    y_ = model_.predict(x_)
-    return y_
-
-
 def linear_svm_model(x_, y_):
     model_ = SVC()
     model_.fit(x_, y_)
     return model_
-
-
-def linear_svm_model_predict(model_, x_):
-    d = 0
-    if len(x_.shape) == 1:
-        d = len(x_)
-    else:
-        _, d = x_.shape
-    x_ = x_.reshape(-1, d)
-    y_ = model_.predict(x_)
-    return y_
 
 
 def mlp(x_, y_, hidden_layers=5):
@@ -78,7 +56,7 @@ def mlp(x_, y_, hidden_layers=5):
     return model_
 
 
-def mlp_predict(model_, x_):
+def predict(model_, x_):
     d = 0
     if len(x_.shape) == 1:
         d = len(x_)
@@ -142,7 +120,7 @@ for i in range(len(x_list)):
         temp_x.append(x_list[i])
         temp_y.append(y_list[j])
         point = np.array([x_list[i], y_list[j]])
-        z[i][j] = linear_svm_model_predict(model, point)
+        z[i][j] = predict(model, point)
     X.append(temp_x)
     Y.append(temp_y)
 
