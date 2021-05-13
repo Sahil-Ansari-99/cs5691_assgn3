@@ -1,0 +1,265 @@
+----Dataset 1A----
+
+1. Perceptron
+
+a. Class 0 vs Class 1
+
+Alpha       Train Accuracy      Validation Accuracy
+0.01            100 %                   100 %
+0.001           100 %                   100 %
+0.0001          100 %                   100 %
+
+Confusion Matrix for best model: alpha=0.0001
+
+Train data:
+
+[[200   0]
+ [  0 200]]
+
+Val data:
+
+[[29  0]
+ [ 0 30]]
+
+
+b. Class 0 vs Class 2
+
+Alpha       Train Accuracy      Validation Accuracy
+0.01            100 %                   100 %
+0.001           100 %                   100 %
+0.0001          100 %                   100 %
+
+Confusion Matrix for best model: alpha=0.0001
+
+Train data:
+
+[[200   0]
+ [  0 199]]
+
+Val data:
+
+[[29  0]
+ [ 0 30]]
+
+c. Class 0 vs Class 3
+
+Alpha       Train Accuracy      Validation Accuracy
+0.01            100 %                   100 %
+0.001           100 %                   100 %
+0.0001          100 %                   100 %
+
+Confusion matrix for best model: alpha=0.0001
+
+Train data:
+
+[[200   0]
+ [  0 200]]
+
+Val data:
+
+[[29  0]
+ [ 0 30]]
+
+
+d. Class 1 vs Class 2
+
+Alpha       Train Accuracy      Validation Accuracy
+0.01            100 %                   100 %
+0.001           100 %                   100 %
+0.0001          100 %                   100 %
+
+Confusion matrix for best model: alpha=0.0001
+
+Train data:
+
+[[200   0]
+ [  0 199]]
+
+Val data:
+
+[[30  0]
+ [ 0 30]]
+
+
+e. Class 1 vs Class 3
+
+Alpha       Train Accuracy      Validation Accuracy
+0.01            100 %                   100 %
+0.001           100 %                   100 %
+0.0001          100 %                   100 %
+
+Confusion matrix for best model: alpha=0.0001
+
+Train data:
+
+[[200   0]
+ [  0 200]]
+
+Val data:
+
+[[30  0]
+ [ 0 30]]
+
+f. Class 2 vs Class 3
+
+Alpha       Train Accuracy      Validation Accuracy
+0.01            100 %                   100 %
+0.001           100 %                   100 %
+0.0001          100 %                   100 %
+
+Confusion matrix for best model: alpha=0.0001
+
+Train data:
+
+[[199   0]
+ [  0 200]]
+
+Val data:
+
+[[30  0]
+ [ 0 30]]
+
+
+2. MLFFN
+
+Hidden layers       Train Accuracy      Validation Accuracy
+    10                  100 %                   100 %
+    15                  100 %                   100 %
+    20                  100 %                   100 %
+
+Confusion Matrix for best model: hidden layers = 10
+
+Train data:
+
+[[200   0   0   0]
+ [  0 200   0   0]
+ [  0   0 199   0]
+ [  0   0   0 200]]
+
+Val data:
+
+[[29  0  0  0]
+ [ 0 30  0  0]
+ [ 0  0 30  0]
+ [ 0  0  0 30]]
+
+
+3. Linear SVM
+
+a. Class 0 vs Class 1
+
+C       Train Accuracy      Validation Accuracy
+0.1          100 %                 100 %
+0.5          100 %                 100 %
+1.0          100 %                  100 %
+
+Confusion Matrix for best model: alpha=1.0
+
+Train data:
+
+[[200   0]
+ [  0 200]]
+
+Val data:
+
+[[29  0]
+ [ 0 30]]
+
+
+b. Class 0 vs Class 2
+
+C       Train Accuracy      Validation Accuracy
+0.1          100 %                 100 %
+0.5          100 %                 100 %
+1.0          100 %                  100 %
+
+Confusion Matrix for best model: alpha=1.0
+
+Train data:
+
+[[200   0]
+ [  0 199]]
+
+Val data:
+
+[[29  0]
+ [ 0 30]]
+
+c. Class 0 vs Class 3
+
+C       Train Accuracy      Validation Accuracy
+0.1          100 %                 100 %
+0.5          100 %                 100 %
+1.0          100 %                  100 %
+
+Confusion Matrix for best model: alpha=1.0
+
+Train data:
+
+[[200   0]
+ [  0 200]]
+
+Val data:
+
+[[29  0]
+ [ 0 30]]
+
+
+d. Class 1 vs Class 2
+
+C       Train Accuracy      Validation Accuracy
+0.1          100 %                 100 %
+0.5          100 %                 100 %
+1.0          100 %                  100 %
+
+Confusion Matrix for best model: alpha=1.0
+
+Train data:
+
+[[200   0]
+ [  0 199]]
+
+Val data:
+
+[[30  0]
+ [ 0 30]]
+
+
+e. Class 1 vs Class 3
+
+C       Train Accuracy      Validation Accuracy
+0.1          100 %                 100 %
+0.5          100 %                 100 %
+1.0          100 %                  100 %
+
+Confusion Matrix for best model: alpha=1.0
+
+Train data:
+
+[[200   0]
+ [  0 200]]
+
+Val data:
+
+[[30  0]
+ [ 0 30]]
+
+f. Class 2 vs Class 3
+
+C       Train Accuracy      Validation Accuracy
+0.1          100 %                 100 %
+0.5          100 %                 100 %
+1.0          100 %                  100 %
+
+Confusion Matrix for best model: alpha=1.0
+
+Train data:
+
+[[199   0]
+ [  0 200]]
+
+Val data:
+
+[[30  0]
+ [ 0 30]]
+
