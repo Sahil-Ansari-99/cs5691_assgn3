@@ -307,6 +307,20 @@ Degree      Training Accuracy       Validation Accuracy
    5               70.45 %                  73.03 %
    6               57.10 %                  57.30 %
 
+Confusion Matrix for best model: degree  = 3
+
+Train data:
+
+[[196   0   3]
+ [ 82 118   0]
+ [ 75   2 123]]
+
+Val data:
+
+[[27  0  2]
+ [12 18  0]
+ [ 9  0 21]]
+
 b. Gaussian Kernel
 
 C       Training Accuracy       Validation Accuracy
@@ -328,4 +342,3 @@ Val data:
 [[29  0  0]
  [ 1 29  0]
  [ 0  0 30]]
-
