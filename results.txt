@@ -263,3 +263,69 @@ Val data:
 [[30  0]
  [ 0 30]]
 
+
+----------Dataset 1B-----------
+
+1. MLFFN
+
+Hidden Layers   Activation  Train Accuracy  Validation Accuracy
+    (20, 20)        relu        98.16 %             95.50 %
+    (20, 20)        logistic    54.42 %             61.80 %
+    (20, 20)        tanh        93.32 %             91.01 %
+    (30, 30)        relu        98.83 %             97.75 %
+    (30, 30)        logistic    54.09 %             62.92 %
+    (30, 30)        tanh        97.67 %             93.25 %
+    (40, 40)        relu        99.33 %             98.88 %
+    (40, 40)        logistic    54.92 %             61.80 %
+    (40, 40)        tanh        98.50 %             96.63 %
+    (70, 70)        relu        99.67 %             98.88 %
+    (70, 70)        logistic    55.59 %             66.29 %
+    (70, 70)        tanh        98.83 %             97.75 %
+
+Confusion Matrix for best model: hidden_layers = (40, 40), activation = 'relu'
+
+Train Data:
+
+[[198   0   1]
+ [  0 197   3]
+ [  0   0 200]]
+
+Val Data:
+
+[[29  0  0]
+ [ 1 29  0]
+ [ 0  0 30]]
+
+2. Nonlinear SVM
+
+a. Polynomial kernel
+
+Degree      Training Accuracy       Validation Accuracy
+   2               50.08 %                  52.81 %
+   3               72.95 %                  74.16 %
+   4               57.43 %                  56.18 %
+   5               70.45 %                  73.03 %
+   6               57.10 %                  57.30 %
+
+b. Gaussian Kernel
+
+C       Training Accuracy       Validation Accuracy
+0.01          65.27 %                   67.41 %
+0.1           95.49 %                   95.51 %
+1.0           98.16 %                   97.75 %
+10.0          99.16 %                   98.88 %
+
+Confusion Matrix for best model: C = 10.0
+
+Train data:
+
+[[198   0   1]
+ [  3 197   0]
+ [  1   0 199]]
+
+Val data:
+
+[[29  0  0]
+ [ 1 29  0]
+ [ 0  0 30]]
+
